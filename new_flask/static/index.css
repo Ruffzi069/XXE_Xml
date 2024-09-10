@@ -1,0 +1,62 @@
+.main{
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 24px;
+    justify-content: space-around;
+    font-family: "Gochi Hand", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.cont{
+    font-family: "Gochi Hand", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+input[type="text"], input[type="password"], input[type="email"]{
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 17px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.smithbody{
+    background-color: black;
+}
+
+.family{
+    font-family: "Gochi Hand", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: chartreuse;
+}
+
+.grid img{
+    height: 150px;
+    width: 150px;
+    border: 2px solid black;
+    box-shadow: 2px 3px 5px greenyellow;
+    image-rendering: pixelated;
+}
+
+.grid div{
+    display: flex;
+    flex-direction: column;
+    font-family: "Gochi Hand", cursive;
+    font-style: normal;
+    font-size: 24px;
+    color: chartreuse;
+}
+
+.grid{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 40px;
+}
+  

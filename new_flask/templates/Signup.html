@@ -1,0 +1,22 @@
+{%extends "navbar.html"%} {%block head%} {{ super() }}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RICK & MORTY</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+{% endblock %}
+{% block content %}
+
+<h1>WELCOME TO THE SIGNUP PAGE !</h1>
+<form method="POST" action="/signup">
+    <label>Username :</label><br>
+    <input type="text" placeholder="Username" id="name" name="name"><br>
+    <label>Email :</label><br>
+    <input type="email" placeholder="Email" id="email" name="email"><br>
+    <label>Password :</label><br>
+    <input type="password" placeholder="Password" id="pass" name="pass"><br>
+    <label>Confirm Password :</label><br>
+    <input type="password" placeholder="Confirm Password" id="conf_pass" name="conf_pass"><br>
+    <input type="submit">
+</form>
+
+{% endblock %}
