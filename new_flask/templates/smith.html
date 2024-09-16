@@ -1,75 +1,74 @@
-{%block content%}
+{% block content %}
 <link rel="stylesheet" href="{{ url_for('static', filename='index.css')}}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
+
 <body class="smithbody">
-<center>
+    <center>
 
-    <h1 class="family">SMITH FAMILY TREE</h1>
+        <h1 class="family">SMITH FAMILY TREE</h1>
 
-<div class="grid">
-    <div>
-        <img src="{{ url_for('static', filename='images/rick.webp')}}">
-        <p>Rick Sanchez</p>
-        <div class="btn-group">
-            <form class="detailForm" action="/data" method="POST">
-                <input required="" type="hidden" name="ID" value="1">
-          <button type="submit" class="btn btn-sm
+        <div class="grid">
+            <div>
+                <img src="{{ url_for('static', filename='images/rick.webp')}}">
+                <p>Rick Sanchez</p>
+                <div class="btn-group">
+                    <form class="detailForm" action="/data" method="POST">
+                        <input required="" type="hidden" name="ID" value="1">
+                        <button type="submit" class="btn btn-sm
               btn-outline-secondary">Details</button>
-            </form>
-        </div>
-    </div>
-    <div>
-        <img src="{{ url_for('static', filename='images/morty.webp')}}">
-        <p>Morty Smith</p>
-        <div class="btn-group">
-            <form class="detailForm" action="/data" method="POST">
-                <input required="" type="hidden" name="ID" value="2">
-          <button type="submit" class="btn btn-sm
+                    </form>
+                </div>
+            </div>
+            <div>
+                <img src="{{ url_for('static', filename='images/morty.webp')}}">
+                <p>Morty Smith</p>
+                <div class="btn-group">
+                    <form class="detailForm" action="/data" method="POST">
+                        <input required="" type="hidden" name="ID" value="2">
+                        <button type="submit" class="btn btn-sm
               btn-outline-secondary">Details</button>
-            </form>
-        </div>
-    </div>
-    <div>
-        <img src="{{ url_for('static', filename='images/beth.webp')}}">
-        <p>Beth Smith</p>
-        <div class="btn-group">
-            <form class="detailForm" action="/data" method="POST">
-                <input required="" type="hidden" name="ID" value="3">
-          <button type="submit" class="btn btn-sm
+                    </form>
+                </div>
+            </div>
+            <div>
+                <img src="{{ url_for('static', filename='images/beth.webp')}}">
+                <p>Beth Smith</p>
+                <div class="btn-group">
+                    <form class="detailForm" action="/data" method="POST">
+                        <input required="" type="hidden" name="ID" value="3">
+                        <button type="submit" class="btn btn-sm
               btn-outline-secondary">Details</button>
-            </form>
-        </div>
-    </div>
-    <div>
-        <img src="{{ url_for('static', filename='images/jerry.webp')}}">
-        <p>Jerry Smith</p>
-        <div class="btn-group">
-            <form class="detailForm" action="/data" method="POST">
-                <input required="" type="hidden" name="ID" value="4">
-          <button type="submit" class="btn btn-sm
+                    </form>
+                </div>
+            </div>
+            <div>
+                <img src="{{ url_for('static', filename='images/jerry.webp')}}">
+                <p>Jerry Smith</p>
+                <div class="btn-group">
+                    <form class="detailForm" action="/data" method="POST">
+                        <input required="" type="hidden" name="ID" value="4">
+                        <button type="submit" class="btn btn-sm
               btn-outline-secondary">Details</button>
-            </form>
-        </div>
-    </div>
-    <div>
-        <img src="{{ url_for('static', filename='images/summer.webp')}}">
-        <p>Summer Smith</p>
-        <div class="btn-group">
-            <form class="detailForm" action="/data" method="POST">
-                <input required="" type="hidden" name="ID" value="5">
-          <button type="submit" class="btn btn-sm
+                    </form>
+                </div>
+            </div>
+            <div>
+                <img src="{{ url_for('static', filename='images/summer.webp')}}">
+                <p>Summer Smith</p>
+                <div class="btn-group">
+                    <form class="detailForm" action="/data" method="POST">
+                        <input required="" type="hidden" name="ID" value="5">
+                        <button type="submit" class="btn btn-sm
               btn-outline-secondary">Details</button>
-            </form>
+                    </form>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
-</center>
+    </center>
 
-<script src="{{ url_for('static', filename='js/xmlDetailsCheckPayload.js')}}"></script>
-<script src="{{ url_for('static', filename='js/detailsCheck.js')}}"></script>
+    <script src="{{ url_for('static', filename='js/detailsCheck.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/xmlDetailsCheckPayload.js') }}"></script>
 
-</body>
-
-{%endblock%}
+    {% endblock %}
